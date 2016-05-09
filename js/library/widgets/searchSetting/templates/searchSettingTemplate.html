@@ -1,0 +1,78 @@
+﻿<div data-dojo-attach-point="divSearchContainer" style="height:70%" align="center" class="esriCTDivSearchResultHolder esriCTHideContainerHeight">
+    <div data-dojo-attach-point="divSearchResultContent" class="esriCTDivSearchResultContent">
+        <div data-dojo-attach-point="divTabConatiner" class="esriCTDivTabConatiner" style="display: none">
+            <div data-dojo-attach-point="divSearchPanel" class="esriCTDivSearchPanel">
+                <div class="esriCTSearchTab" data-dojo-attach-point="searchPanelTitle">
+                </div>
+            </div>
+            <div data-dojo-attach-point="divActivityPanel" class="esriCTActivityPanel">
+                <div class="esriCTSearchTab" data-dojo-attach-point="activityPanelTitle">
+                </div>
+            </div>
+            <div data-dojo-attach-point="divEventsPanel" class="esriCTEventsPanel">
+                <div class="esriCTSearchTab" data-dojo-attach-point="eventsPanelTitle">
+                </div>
+            </div>
+        </div>
+        <div class="esriCTEventListTabSelected" style="color: white;background-color: green;margin-bottom: 20px;">
+            <span>${sharedNls.titles.activitySearchTabName}</span>
+        </div>
+        <div class="esriCTDivActivityContainer" data-dojo-attach-point="divActivityContainer">
+        </div>
+
+        <div class="esriCTDivSearchContent" data-dojo-attach-point="divSearchContent" style="display: block;padding: 10px;">
+            <!--模糊查询-->
+            <div id="searchFuzzily" ></div>
+            <!--查询图层的下拉框 lx start-->
+            <div class="esriCTSearchSelectDiv">
+                <!--<select class="esriCTSelectLayer" name="selectLayerId" id="selectLayerId">-->
+                <!--<select class="esriCTSelectLayer" name="select" id="selectLayer">少了一个属性！所以加监听的时候报错了。-->
+                <select name="select" id="selectLayer" data-dojo-attach-point="selectlayer" class="esriCTSearchSelect">
+                    <option value="选择查询图层">-----------------------选择查询图层-----------------------</option>
+                </select>
+            </div>
+            <div class="esriCTSearchSelectDiv">
+                <select name="select" id="fieldName" data-dojo-attach-point="selectfieldName" class="esriCTSearchSelect">
+                    <option value="选择字段">--------选择字段--------</option>
+                </select>
+            </div>
+            <div class="esriCTSearchSelectDiv">
+                <select name="select" id="method" data-dojo-attach-point="selectfieldMethod"  class="esriCTSearchSelect">
+                    <option value="选择方法">等于</option>
+                </select>
+            </div>
+            <div class="esriCTSearchSelectDiv">
+                <select name="select" id="fieldValue" data-dojo-attach-point="selectfieldValue" class="esriCTSearchSelect">
+                    <option value="选择数值">--------选择数值--------</option>
+                </select>
+            </div>
+            <!--查询图层的下拉框 lx end-->
+        </div>
+        <div class="esriCTDivEventContainer" data-dojo-attach-point="divEventContainer">
+            <div class="esriCTActiviyDateContainer">
+                <div class="esriCTActiviyDateInnerContainer">
+                    <div class="esriCTDivClear">
+                        <div class="esriCTDivFromDate">
+                            <span class="esriCTFromDateText">${sharedNls.titles.fromDateText}</span>
+                        </div>
+                        <div class="esriCTDivToDate">
+                            <span class="esriCTDivTODateText">${sharedNls.titles.toDateText}</span>
+                        </div>
+                    </div>
+                    <div class="esriCTDivClear">
+                        <div class="esriCTDivFromDate">
+                            <input type="date" name="fromDate" data-dojo-type="dijit/form/DateTextBox" data-dojo-attach-point="myFromDate"
+                                required="true" />
+                        </div>
+                        <div class="esriCTDivToDate">
+                            <input type="date" name="toDate" data-dojo-type="dijit/form/DateTextBox" data-dojo-attach-point="myToDate"
+                                required="true" />
+                        </div>
+                        <div class="esriCTBottomGo" data-dojo-attach-point="buttonGo" title="${sharedNls.tooltips.searchTooltip}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

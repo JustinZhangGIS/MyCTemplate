@@ -1,0 +1,38 @@
+﻿<div class="esriCTDivActivityAppContainer esriCTHideContainerHeight" data-dojo-attach-point="applicationHeaderActivityContainer" style="height: 71%">
+<!--<div class="esriCTDivActivityAppContainer esriCTHideContainerHeight" data-dojo-attach-point="applicationHeaderActivityContainer" style="width: 800px;height: 500px;">-->
+    <div class="esriCTDivActivityContainer">
+        <div class="esriCTEventListTabSelected" data-dojo-attach-point="activityListTab" style="color: white;background-color: green;margin-bottom: 20px;">
+            <span>${sharedNls.titles.activityChartsTabName}</span>
+            <span id="adjustSizeSpan" data-dojo-attach-point="adjustSizeSpanDojoPoint" style="float: right;padding-right: 2px;cursor: pointer;">放大</span>
+        </div>
+        <div data-dojo-attach-point="TabContentContainer">
+            <div class="esriCTChartList" data-dojo-attach-point="activityList">
+                <div class="esriCTMyListHeaderRow" style="display:none;">
+                    <div class="esriCTMyListHeaderLeft">
+                        <div style="display: table" data-dojo-attach-point="orderByDate">
+                            <div class="esriCTMyListHeaderTextDisable" data-dojo-attach-point="orderByDateList">
+                                ${sharedNls.titles.orderByDate}
+                            </div>
+                            <div class="esriCTImgOrderByDateDisable esriCTImgOrderByDateDownDisable" data-dojo-attach-point="orderByDateImage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="esriCTHeaderMyListRight">
+                        <div>
+                            <div data-dojo-attach-point="directionForEvents" title="${sharedNls.tooltips.routeForListTooltip}">
+                            </div>
+                            <div class="esriCTHeaderAddAcitivityListDisable" data-dojo-attach-point="calenderForEvent"
+                                title="${sharedNls.tooltips.addToCalendarForListTooltip}">
+                            </div>
+                            <div class="esriCTHeaderPrintAcitivityListDisable" data-dojo-attach-point="printEventList"
+                                title="${sharedNls.tooltips.printForListTooltip}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div id="chartsContainer" style="width: 600px;height: 400px"></div>-->
+                <div id="chartsContainer"></div>
+            </div>
+        </div>
+    </div>
+</div>

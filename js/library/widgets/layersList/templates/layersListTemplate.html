@@ -1,0 +1,55 @@
+﻿<div class="esriCTDivActivityAppContainer esriCTHideContainerHeight" data-dojo-attach-point="applicationHeaderActivityContainer"
+<<<<<<< HEAD
+<<<<<<< HEAD
+    style="height:70%">
+=======
+     style="height:70%">
+<!--style="height:70%;overflow: visible"> 去掉overflow:visible就不会默认显示出来图层控制这个div元素了-->
+>>>>>>> 0d79ee490eb41a1fd7bea9177139959d6f917eff
+=======
+     style="height:70%" >
+<!--style="height:70%;overflow: visible"> 20151221去掉overflow:visible就不会默认显示出来图层控制这个div元素了-->
+>>>>>>> origin/wfh
+    <div class="esriCTDivActivityContainer">
+        <div class="esriCTEventListTabSelected" data-dojo-attach-point="activityListTab">
+            <div style="color: white;background-color: green;margin-bottom: 20px;">
+                <span >${sharedNls.titles.arraysListTabName}</span>
+            </div>
+        </div>
+
+        <div data-dojo-attach-point="TabContentContainer">
+
+            <div class="esriCTActivityList" data-dojo-attach-point="activityList" >
+                <!--wfh start-->
+                <div id="layersDiv"></div>
+                <!--wfh end-->
+                <div class="esriCTMyListHeaderRow" style="display: none">
+                    <div class="esriCTMyListHeaderLeft">
+                        <div style="display: table" data-dojo-attach-point="orderByDate">
+                            <div class="esriCTMyListHeaderTextDisable" data-dojo-attach-point="orderByDateList">
+                                ${sharedNls.titles.orderByDate}
+                            </div>
+                            <div class="esriCTImgOrderByDateDisable esriCTImgOrderByDateDownDisable" data-dojo-attach-point="orderByDateImage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="esriCTHeaderMyListRight">
+                        <div>
+                            <div data-dojo-attach-point="directionForEvents" title="${sharedNls.tooltips.routeForListTooltip}">
+                            </div>
+                            <div class="esriCTHeaderAddAcitivityListDisable" data-dojo-attach-point="calenderForEvent"
+                                title="${sharedNls.tooltips.addToCalendarForListTooltip}">
+                            </div>
+                            <div class="esriCTHeaderPrintAcitivityListDisable" data-dojo-attach-point="printEventList"
+                                title="${sharedNls.tooltips.printForListTooltip}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div id="layerListPane" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'right'">-->
+            <!---->
+        <!--</div>-->
+    </div>
+</div>
